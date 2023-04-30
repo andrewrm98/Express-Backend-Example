@@ -1,0 +1,14 @@
+---
+version: '3.4'
+services:
+  express:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - ${EXPRESS_PORT_PUBLIC}:${EXPRESS_PORT_DOCKER}
+    environment:
+      WEAVIATE_HOST_DOCKER: ${EXPRESS_PORT_DOCKER}
+      WEAVIATE_HOST_PUBLIC: ${EXPRESS_PORT_PUBLIC}
+...
