@@ -1,3 +1,6 @@
+# What is this
+This is a Node & Express backend API setup with Docker for containerization.
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
